@@ -4,8 +4,13 @@ const WeatherForecast = ({ img, conditions, time }) => {
   return (
     <div className="forecast">
       <img src={img} alt={img} />
-      <h3 className="conditions"> Conditions: {conditions}</h3>
-      <h4 className="time">{time}</h4>
+      <p>
+        <span>Conditions:</span> {conditions}
+      </p>
+      <p>
+        <span>time:</span>
+        {time}
+      </p>
     </div>
   );
 };
